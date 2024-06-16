@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .login-container {
+          height: 100vh;
+          display: flex;
+          margin: 0;
+          padding: 100px 60px;
+          flex-direction: column;
+          background-color: #d3d3d3;
+        }
+        .login h1 {
+            padding-left: 20px;
+        }
+        .login hr {
+            border: 2px solid white;
+        }
+
+        .content-login {
+            padding: 40px 60px 50px;
+        }
+
+        .button-login {
+            margin: 0px 80px;
+        }
+
+        .btn-continue {
+            width: 180px;
+            border-radius: 50px;
+            background-color: grey;
+            color: #fff;
+        }
+    
+        .btn-webmail {
+            width: 360px;
+            margin-left: 30px;
+            border-radius: 50px;
+        }
+
+        .btn-webmail img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .btn-webmail h7 {
+            margin-left: 15px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container=fluid login-container">
+        <div class="container login">
+            <h1 class="text-left mb-4">Login</h1>
+            <hr>
+        </div>
+        <div class="container content-login">
+            <div class="input-group input-group-lg">
+                <span class="input-group-text rounded-start-pill" id="inputGroup-sizing-lg">Student Number</span>
+                <input type="text" class="form-control rounded-end-pill" aria-label="Sizing example input" aria placeholder="Enter Your Student Number">
+            </div>
+        </div>
+        <div class="container button-login d-flex justify-content-start">
+            <div class="row">
+                <button class="btn btn-continue col-sm-4">Continue</button>
+                <button class="btn btn-webmail col-sm-4"><img src="src/image/email.svg"><h7>Continue with Webmail</h7></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/\/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .login-container {
+          height: 100vh;
+          display: flex;
+          margin: 0;
+          padding: 100px 60px;
+          flex-direction: column;
+          background-color: #d3d3d3;
+        }
+        .login h1 {
+            padding-left: 20px;
+        }
+        .login hr {
+            border: 2px solid white;
+        }
+
+        .content-login {
+            padding: 40px 60px 50px;
+        }
+
+        .profil-user {
+            padding-bottom: 40px;
+        }
+
+        .profil-user img {
+            height: 60px;
+            width: 60px;
+            background-color: gray;
+        }
+
+        .button-login {
+            margin: 0px 80px;
+        }
+
+        .btn-continue {
+            width: 180px;
+            border-radius: 50px;
+            background-color: grey;
+            color: #fff;
+        }
+    
+        .btn-webmail {
+            width: 360px;
+            margin-left: 40px;
+            border-radius: 50px;
+        }
+
+        .btn-webmail img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .btn-webmail h7 {
+            margin-left: 15px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container=fluid login-container">
+        <div class="container login">
+            <h1 class="text-left mb-4">Login</h1>
+            <hr>
+        </div>
+        <div class="container content-login">
+            <div class="row profil-user">
+                <div class="col-auto">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <img src="" class="border border-white rounded-circle">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="row">
+                        <div class="col h4">
+                            Hello, ..
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Not You?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text rounded-start-pill" id="inputGroup-sizing-lg">Password</span>
+                <input type="text" class="form-control rounded-end-pill" aria-label="Sizing example input" aria placeholder="Enter Your Password">
+            </div>
+            <br><a href="" class="link-secondary link-offset-2 link-underline-oppacity-25 link-underline-oppacity-100-hover">Forget Your Password?</a>
+        </div>
+        <div class="container button-login d-flex justify-content-start">
+            <div class="row">
+                <button class="btn btn-lg btn-continue col-sm-4">Login</button>
+                <button class="btn btn-lg btn-webmail col-sm-4"><img src="src/image/email.svg"><h7>Continue with Webmail</h7></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/\/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
